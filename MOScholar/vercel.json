@@ -7,6 +7,9 @@
       "config": { "distDir": "dist/MOScholar" }
     }
   ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/MOScholar",
+  "framework": "angular",
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
   ]
