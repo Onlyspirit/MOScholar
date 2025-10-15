@@ -2,15 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "angular.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist/MOScholar" }
+      "src": "package.json",
+      "use": "@vercel/static-build"
     }
   ],
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist/MOScholar",
-  "framework": "angular",
   "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }
